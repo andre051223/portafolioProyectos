@@ -13,38 +13,44 @@ li {
   list-style-type: none;
 }
 
-h3{
-  text-align: center;
-}
-
-html {
-  font-family: Arial, sans-serif;
-  background: linear-gradient( to top right, #05052b,#05052b 50%, #00008B 160%);
+html{
+  background-color: #1d1e2f;
   color: white;
-  margin-top: 50px;
-}
-
-header {
-  color: white;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  padding: 0.5em 0;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin: 25px;
 }
 
-
-.container {
+header{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center; 
+  text-align: center;
+  align-items: center;
+  margin: 10px;
+  padding: 20px;
+  
+  a{
+    gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+.diego{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
   justify-content: center;
   align-items: center;
-  width: auto;
-  height: auto;
-}
-
-.diego {
-  display: flex;
-  justify-content: center;
-  width: auto;
-  height: auto;
+  margin-top: 50px;
+  margin: 50px;
+  padding: 20px;
 }
 
 .left-column,
@@ -52,98 +58,278 @@ header {
 .right-column{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
+  justify-content: center;
   align-items: center;
-  margin: 25px; 
-  margin-bottom: 50px;
-  padding: 25px;
-  width: 275px;
-  height: auto;
-  border: 2px solid #030395;
-  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
 
   img{
-      width: 100%;
-      height: 100%;
-  }
+    border-radius: 15px
+  };
 }
 
 .social-media{
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 50px;
-  
-}
-
-.social-media button,
-.education button{
-  margin: 5px;
-  padding: 25px;
-  width: 200px;
-  height: 65px;
-  text-align: center;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  cursor: pointer;
-  font-size: 18px;
-  background-color: #070750;
-  color: black;
-  border: 2px solid #00008B;
-  border-radius: 10px;
+  margin-top: 15px;
 
+  img{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
 }
 
 
-.projects {
+.projects,
+.projects-2{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 20px;
-  font-size: 20px;
-  width: 200px;
-  height: auto;
-  gap: 10px;
-}
-
-.projects img {
-  width: 100px;
-  height: 100px;
-  border-radius: 30%;
-  margin: 5px;
-  padding: 10px;
-}
-
-.laScaloneta button,
-.barcelona button,
-.formula1 button,
-.platziWeb button {
-  display: flex;
-  flex-direction: row;
-  margin: 5px;
-  padding: 25%;
-  width: 250px;
-  height: 175px;
-  border: none;
-  cursor: pointer;
-  font-size: 20px;
-  background-color: #070750;
-  color: black;
-  border-radius: 10px;
   align-items: center;
-  text-align: center;
+  margin-top: 15px;
+
+  button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: auto;
+    width: 200px;
+    height: 175px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: transparent;
+    border: 5px solid grey;
+    color: black;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+  }
 }
 
-/* Estilos para pantallas pequeñas (móviles) */
-@media (max-width: 600px) {
-  /* Otros estilos específicos para móviles */
+.formacion-academica{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  padding: 20px;
+  width: 100%;
+  background-color: whitesmoke;
+  color: #1d1e2f;
+
+  h2, h3, h4{
+    background-color: #333;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  p{
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+  }
 }
 
-/* Estilos para pantallas medianas (tabletas) */
-@media (min-width: 601px) and (max-width: 1024px) {
-  /* Otros estilos específicos para tabletas */
+.areandina,
+.platzi,
+.mision-tic{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 5% auto;
+  padding: 20px;
 }
 
-/* Estilos para pantallas grandes (escritorios) */
-@media (min-width: 1025px)  and (max-width: 1440px) {
+.areandina img,
+.platzi img,
+.mision-tic img{
+  width: 600px;
+  height: auto;
+  padding: 25px;
+  padding: 1px;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.experiencia-laboral{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  padding: 20px;
+
+  h2, h3, h4{
+    background-color: whitesmoke;
+    color: #1d1e2f;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  li{
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+  }
+}
+
+.platzi-associate,
+.ITS{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  margin: 5% auto;
+  padding: 20px;
+}
+
+.platzi-associate img,
+.ITS img{
+  width: 75%;
+  height: auto;
+}
+
+.contacto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  padding: 20px;
+  width: 100%;
+  background-color: whitesmoke;
+  color: #1d1e2f;
+
+  h2, h3, h4{
+    background-color: #333;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  p{
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  button{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+
+/** Media Queries **/
+
+@media (max-width: 1200px) {
+  .diego {
+    grid-template-columns: 1fr;
+  }
+
+  .areandina,
+  .platzi,
+  .mision-tic,
+  .platzi-associate,
+  .ITS {
+    grid-template-columns: 1fr;
+  }
+
+  .projects,
+  .projects-2 {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .center-column,
+  .right-column {
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .formacion-academica h2,
+  .formacion-academica h3,
+  .formacion-academica h4,
+  .formacion-academica p,
+  .experiencia-laboral h2,
+  .experiencia-laboral h3,
+  .experiencia-laboral h4,
+  .experiencia-laboral li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .diego {
+    grid-template-columns: 1fr;
+  }
+
+  .projects,
+  .projects-2 {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .center-column,
+  .right-column {
+    margin: 5px;
+    padding: 10px;
+  }
+
+  .formacion-academica h2,
+  .formacion-academica h3,
+  .formacion-academica h4,
+  .formacion-academica p,
+  .experiencia-laboral h2,
+  .experiencia-laboral h3,
+  .experiencia-laboral h4,
+  .experiencia-laboral li {
+    font-size: 14px;
+  }
+
+  .areandina img,
+  .platzi img,
+  .mision-tic img,
+  .platzi-associate img,
+  .ITS img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+
+  .projects button,
+  .projects-2 button {
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+  }
+
+  .formacion-academica h2,
+  .formacion-academica h3,
+  .formacion-academica h4,
+  .formacion-academica p,
+  .experiencia-laboral h2,
+  .experiencia-laboral h3,
+  .experiencia-laboral h4,
+  .experiencia-laboral li {
+    font-size: 12px;
+  }
 }
