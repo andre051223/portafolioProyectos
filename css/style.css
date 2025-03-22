@@ -14,13 +14,13 @@ li {
 }
 
 html{
-  background-color: #1d1e2f;
+  background-color: black;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  font-size: 24px;
   margin: 25px;
 }
 
@@ -133,7 +133,7 @@ header{
   p{
     margin: 10px;
     padding: 10px;
-    font-size: 18px;
+    font-size: 24px;
   }
 }
 
@@ -175,7 +175,7 @@ header{
   li{
     margin: 10px;
     padding: 10px;
-    font-size: 18px;
+    font-size: 24px;
   }
 }
 
@@ -214,13 +214,13 @@ header{
   p{
     margin: 10px;
     padding: 10px;
-    font-size: 18px;
+    font-size: 24px;
   }
 
   button{
     margin: 10px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 24px;
     background-color: #333;
     color: white;
     border: none;
@@ -264,7 +264,7 @@ header{
   .experiencia-laboral h3,
   .experiencia-laboral h4,
   .experiencia-laboral li {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 
@@ -297,7 +297,7 @@ header{
   .experiencia-laboral h3,
   .experiencia-laboral h4,
   .experiencia-laboral li {
-    font-size: 14px;
+    font-size: 24px;
   }
 
   .areandina img,
@@ -312,14 +312,14 @@ header{
 
 @media (max-width: 480px) {
   html {
-    font-size: 16px;
+    font-size: 24px;
   }
 
   .projects button,
   .projects-2 button {
     width: 100%;
     height: auto;
-    font-size: 16px;
+    font-size: 24px;
   }
 
   .formacion-academica h2,
@@ -330,6 +330,6 @@ header{
   .experiencia-laboral h3,
   .experiencia-laboral h4,
   .experiencia-laboral li {
-    font-size: 12px;
+    font-size: 24px;
   }
 }
